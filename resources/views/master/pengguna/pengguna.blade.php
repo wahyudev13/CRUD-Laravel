@@ -33,9 +33,9 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
-              <div class="table-responsive">
+            
               <!-- Table with stripped rows -->
-              <table class="table datatable">
+              <table class="table datatable" width="100%" cellspacing="0">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
@@ -69,7 +69,7 @@
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
-              </div><!--responsif-->
+             
             </div>
           </div>
 

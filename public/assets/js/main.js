@@ -297,11 +297,13 @@
   /**
    * Initiate Datatables
    */
-  const datatables = select('.datatable', true)
-  datatables.forEach(datatable => {
-    new simpleDatatables.DataTable(datatable);
-  })
-
+  // const datatables = select('.datatable', true)
+  // datatables.forEach(datatable => {
+  //   new simpleDatatables.DataTable(datatable);
+  // })
+  $(".datatable").DataTable({
+    responsive: true
+  });
   /**
    * Autoresize echart charts
    */

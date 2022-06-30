@@ -24,12 +24,15 @@ use App\Http\Controllers\Login;
 // Route::get('/', function () {
 //     return view('dashboard');
 // });
+Route::get('/formulir', [Login::class,'formulir']);
+
+Route::post('/formulir/store',[Login::class,'storeformulir']);
+
 Route::middleware(['CekSession'])->group(function () {
     //Login LOgout
-Route::get('/',[Login::class,'index']);
+    Route::get('/',[Login::class,'index']);
 
-Route::get('/formulir', [Login::class,'formulir']);
-Route::post('/formulir/store',[Login::class,'storeformulir']);
+  
 });
 
 Route::post('/authenticate',[Login::class,'login']);

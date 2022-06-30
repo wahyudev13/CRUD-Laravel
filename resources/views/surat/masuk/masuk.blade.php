@@ -34,8 +34,8 @@
                         </div>
                     @endif
               <!-- Table with stripped rows -->
-              <div class="table-responsive">
-              <table class="table datatable">
+             
+                <table class="table datatable" width="100%" cellspacing="0">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
@@ -64,7 +64,7 @@
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
-              </div><!--Responsif-->
+             
             </div>
           </div>
 

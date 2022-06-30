@@ -43,7 +43,7 @@
               </h5>
               
               <!-- Table with stripped rows -->
-              <div class="table-responsive">
+          
               <table class="table datatable">
                 <thead>
                   <tr>
@@ -77,7 +77,7 @@
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
-              </div>
+             
               
 
             </div>

@@ -17,7 +17,7 @@
         <div class="col-lg-12">
 
           <div class="card">
-            <div class="card-body">
+            < class="card-body">
               <h5 class="card-title">
                   <form action="" method="get">
                     <div class="row">
@@ -43,7 +43,7 @@
               </h5>
               
               <!-- Table with stripped rows -->
-              <div class="table-responsive">
+          
               <table class="table datatable">
                 <thead>
                   <tr>
@@ -69,7 +69,7 @@
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
-              </div>
+              
               
 
             </div>

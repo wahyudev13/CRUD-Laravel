@@ -29,6 +29,10 @@
   <link href="{{asset('assets/select2/css/select2.min.css')}}" rel="stylesheet" />
   <link href="{{asset('assets/select2/css/select2.css')}}" rel="stylesheet" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/rowreorder/1.2.8/css/rowReorder.dataTables.min.css">
   
   <!-- =======================================================
   * Template Name: NiceAdmin - v2.2.2
