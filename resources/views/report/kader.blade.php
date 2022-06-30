@@ -70,12 +70,8 @@
                 </tbody>
               </table>
               <!-- End Table with stripped rows -->
-          
-              
-
             </div>
           </div>
-
         </div>
       </div>
     </section>
