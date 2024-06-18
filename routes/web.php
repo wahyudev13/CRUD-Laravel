@@ -10,6 +10,7 @@ use App\Http\Controllers\DasboardController;
 use App\Http\Controllers\SuratKeluar;
 use App\Http\Controllers\Report;
 use App\Http\Controllers\Login;
+use App\Http\Controllers\RapatController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,8 +26,11 @@ use App\Http\Controllers\Login;
 //     return view('dashboard');
 // });
 Route::get('/formulir', [Login::class,'formulir']);
-
 Route::post('/formulir/store',[Login::class,'storeformulir']);
+
+//Rekap Rapat
+Route::get('/rekap/rapat/{id}',[RapatController::class,'rekap']);
+Route::post('/rekap/rapat/store',[RapatController::class,'storerekap']);
 
 Route::middleware(['CekSession'])->group(function () {
     //Login LOgout
@@ -84,6 +88,18 @@ Route::middleware(['CekLogin'])->group(function () {
     Route::get('/kader/edit/{id}',[KaderController::class,'edit']);
     Route::post('/kader/update',[KaderController::class,'update']);
     Route::get('/kader/hapus/{id}',[KaderController::class,'destroy']);
+
+    //Rapat
+    Route::get('/rapat',[RapatController::class,'index']);
+    Route::get('/formrapat',[RapatController::class,'create']);
+    Route::post('/rapat/store',[RapatController::class,'store']);
+    Route::get('/rapat/hapus/{id}',[RapatController::class,'destroy']);
+    Route::get('/rapat/edit/{id}',[RapatController::class,'edit']);
+    Route::post('/rapat/update',[RapatController::class,'update']);
+    Route::get('/rapat/rekap',[RapatController::class,'hasil']);
+    Route::get('/rapat/rekap/hapus/{id}',[RapatController::class,'destroyrekap']);
+
+    
 
     //Setting
     Route::get('/setting/{id}',[SettingController::class,'index']);

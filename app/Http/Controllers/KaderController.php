@@ -12,13 +12,6 @@ use Haruncpi\LaravelIdGenerator\IdGenerator;
 
 class KaderController extends Controller
 {
-
-    // public function __construct()
-    // {
-    //     $das = Setting::get();
-    //     return $das;
-    //     // $data = ['dasboard' => $das];
-    // }
     /**
      * Display a listing of the resource.
      *

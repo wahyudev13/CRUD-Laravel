@@ -29,28 +29,36 @@
       @endif
       @if (auth()->user()->level == 'admin'|| auth()->user()->level == 'bidor')
         <li class="nav-item">
-          <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-            <i class="bi bi-journal-text"></i><span>Master</span><i class="bi bi-chevron-down ms-auto"></i>
+          <a class="nav-link collapsed" href="/kader">
+          <i class="bi bi-person-check"></i>
+            <span>Data Kader</span>
           </a>
-          <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-            <li>
-              <a href="/komisariat">
-                <i class="bi bi-circle"></i><span>Data Komisariat</span>
-              </a>
-            </li>
-            <li>
-              <a href="/kader">
-                <i class="bi bi-circle"></i><span>Data Kader</span>
-              </a>
-            </li>
-            
-          </ul>
-        </li><!-- End Forms Nav -->
+        </li><!-- End Profile Page Nav -->
       @endif
 
      
     
-      <li class="nav-heading">Pages</li>
+      {{-- <li class="nav-heading">Pages</li> --}}
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#rapat" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-file-earmark-bar-graph"></i><span>Rapat</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="rapat" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          @if (auth()->user()->level == 'admin'|| auth()->user()->level == 'sekret')
+          <li>
+            <a href="/rapat">
+              <i class="bi bi-circle"></i><span>Data Rapat</span>
+            </a>
+          </li>
+          <li>
+            <a href="/rapat/rekap">
+              <i class="bi bi-circle"></i><span>Rekap Rapat</span>
+            </a>
+          </li>
+          @endif
+        </ul>
+      </li><!-- End Forms Nav -->
+
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#report" data-bs-toggle="collapse" href="#">
           <i class="bi bi-file-earmark-bar-graph"></i><span>Report</span><i class="bi bi-chevron-down ms-auto"></i>
@@ -77,13 +85,33 @@
           @endif
         </ul>
       </li><!-- End Forms Nav -->
-      @if (auth()->user()->level == 'admin')
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="/pengguna">
-        <i class="bi bi-person-check"></i>
-          <span>Data Pengguna</span>
-        </a>
-      </li><!-- End Profile Page Nav -->
+    
+      @if (auth()->user()->level == 'admin'|| auth()->user()->level == 'bidor')
+        <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-journal-text"></i><span>Master</span><i class="bi bi-chevron-down ms-auto"></i>
+          </a>
+          <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+            <li>
+              <a href="/komisariat">
+                <i class="bi bi-circle"></i><span>Data Komisariat</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="bi bi-circle"></i><span>Data Jabatan</span>
+              </a>
+            </li>
+            <li>
+              <a href="/pengguna">
+                <i class="bi bi-circle"></i><span>Data Pengguna</span>
+              </a>
+            </li>
+            
+          </ul>
+        </li><!-- End Forms Nav -->
+
+
       @endif
       @if (auth()->user()->level == 'admin')
         <li class="nav-item">

@@ -64,7 +64,7 @@
                 <div class="card-body">
 
                   <div class="pt-4 pb-2 text-center">
-                    <img style="width: 30%;" src="/file/setting/{{$dasboard[0]->logo}}" alt="">
+                    <img height="80px" width="auto" src="/file/setting/{{$dasboard[0]->logo}}" alt="">
                     <h5 class="card-title text-center pb-0 fs-4">SIM IMM</h5>
                     <p class="text-center small">Enter your username & password to login</p>
                   </div>
